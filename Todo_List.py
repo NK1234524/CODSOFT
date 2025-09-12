@@ -1,58 +1,58 @@
-todo_list=[]
-
-while True :
-  print("---Welcome to TODO List---")
-  print("1.View Tasks")
-  print("2.Add Task")
-  print("3.Update Task")
-  print("4.Delete Task")
-  print("5.Exit")
-  choice = input("Enter the choice here :")
-  if choice =="1" :
-   if not todo_list:
-    print("Empty Todo List ")
-   else:
-    print("\n Your tasks ")
-    for index,task in enumerate(todo_list,start=1):
-      print(f"{index}.{task}")
-
-  elif choice =="2":
-    task = input("Add new task\n")
-    todo_list.append(task)
-    print("Task added successfully ")
-
-  elif choice =="3":
-    if not todo_list:
-      print("Empty Todo List ")
-    else:
-      for index,task in enumerate(todo_list,start=1):
-        print(f"{index}.{task}")
-      index = int(input("Enter the task index number to update : "))-1
-      if 0<=index<len(todo_list):
-        new_task =input("Enter the new task here\n")
-        todo_list[index]=new_task
-        print("Task updated successfully")
+Todo_list = []
+while True:
+    print("--Todo List--")
+    print("Choose from the options provided velow")
+    print("1.Vew List")
+    print("2.Add a task")
+    print("3.Update a task")
+    print("4.Delete a task")
+    print("5.Exit")
+    choice = input("Enter the option\n")
+    if choice=="1":
+      if not Todo_list:
+         print("Empty todo list")
       else:
-        print("Invalid index number")
-  
-  elif choice == "4":
-    if not todo_list:
-      print("Empty Todo List")
-    else:
-      for index,task in enumerate(todo_list,start=1):
-        print(f"{index}.{task}")
-      index = int(input("Enter the task index number to delete : "))-1
-      if 0<=index<len(todo_list):
-        removed = todo_list.pop(index)
-        print(f"Task removed deleted successfully\n")
+        print("Here is your Todo List")
+        for index,task in enumerate(Todo_list,start=1):
+           print(f"{index}.{task}")
+      
+    elif choice=="2":
+      print("Add a task")
+      task = input("Enter a task\n")
+      Todo_list.append(task)
+      print("Task added successfully")
+    elif choice=="3":
+      print("Update a task in the todo List")
+      if not Todo_list:
+         print("Empty Todo List")
       else:
-        print("Invalid task number")
+         for index,task in enumerate(Todo_list,start=1 ):
+            if 0<=index<len(Todo_list):
+             index = int(input("Enter the index value here"))-1
+             newtask = input("Enter the updated task at %d",index)
+             Todo_list[index]=newtask
+             print("Task Updated")
+            else:
+               print("Wrong index number")
+    elif choice=="4":
+       print("Delete the task in the todo List")
+       if not Todo_list:
+          print("Empty Todo List")
+       else:
+          for index,task in enumerate(Todo_list,start=1):
+             if 0<=index<len(Todo_list):
+                index=int(input("Enter the index value here"))-2
+                removed = Todo_list.pop(index)
+                print("Task deleted")
+             else :
+                print("Wrong index number")
+    elif choice=="5":
+       print("EXITING...")
+       break
+    else:
+       print("Wrong choice...")
 
-  elif choice == "5":
-    print("Exiting....\n")
-    break
-
-  else:
-    print("Invalid choice.please try again\n")
-    print("Please choose option from choices provided from 1 to 5 only")
-
+                              
+            
+               
+            
