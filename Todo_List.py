@@ -41,7 +41,7 @@ while True:
        else:
           for index,task in enumerate(Todo_list,start=1):
              if 0<=index<len(Todo_list):
-                index=int(input("Enter the index value here"))-2
+                index=int(input("Enter the index value here"))-1
                 removed = Todo_list.pop(index)
                 print("Task deleted")
              else :
