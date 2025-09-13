@@ -11,8 +11,8 @@ while True:
   if choice=="1":
     print("Welcome to addition")
     while True:      
-      num1 = int(input("Enter the number"))
-      num2 = int(input("Enter the number"))
+      num1 = int(input("Enter the number 1 :"))
+      num2 = int(input("Enter the number 2 :"))
       print(num1+num2)
       more = input("Do you want to add more numbers? (yes/no): ")
       if more.lower() != "yes":
@@ -37,8 +37,8 @@ while True:
   elif choice=="3":
     print("Welcome to multiplication")
     while True:
-      num1 = int(input("Enter the number"))
-      num2 = int(input("Enter the number"))
+      num1 = int(input("Enter the number 1 :"))
+      num2 = int(input("Enter the number 2 :"))
       print(num1*num2)
       more = input("Do you want to multiply more numbers? (yes/no): ")
       if more.lower() != "yes":
@@ -48,8 +48,8 @@ while True:
   elif choice=="4":
     print("Welcome to division")
     while True:
-      num1 = int(input("Enter the number"))
-      num2 = int(input("Enter the number"))
+      num1 = int(input("Enter the number 1 :"))
+      num2 = int(input("Enter the number 2 :"))
       print(num1/num2)
       more = input("Do you want to divide more numbers? (yes/no): ")
       if more.lower() != "yes":
