@@ -17,6 +17,8 @@ while True:
       more = input("Do you want to add more numbers? (yes/no): ")
       if more.lower() != "yes":
        break
+
+
   elif choice=="2":
     print("Welcome to subtraction")
     while True:
@@ -30,6 +32,8 @@ while True:
       more = input("Do you want to subtract more numbers? (yes/no): ")
       if more.lower() != "yes":
         break
+
+
   elif choice=="3":
     print("Welcome to multiplication")
     while True:
@@ -39,6 +43,8 @@ while True:
       more = input("Do you want to multiply more numbers? (yes/no): ")
       if more.lower() != "yes":
        break
+
+
   elif choice=="4":
     print("Welcome to division")
     while True:
@@ -51,3 +57,8 @@ while True:
       if num2==0:
         print("Infinity")
       break
+
+  elif choice=="5":
+    print("....Exiting....\n")
+    print("Thank you for use")
+    break
