@@ -7,7 +7,9 @@ while True:
     print("3.Update a task")
     print("4.Delete a task")
     print("5.Exit")
+
     choice = input("Enter the option\n")
+    
     if choice=="1":
       if not Todo_list:
          print("Empty todo list")
