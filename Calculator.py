@@ -6,7 +6,7 @@ while True:
   print("4.DIVISION \n")
   print("5.EXIT \n")
 
-  choice = input("Enter the choice : \n")
+  choice = input("Enter the choice : ")
 
   if choice=="1":
     print("Welcome to addition")
