@@ -7,3 +7,8 @@ My first task is of Todo_List in python language.
 # 2.CALCULATOR
 Here is my Calculator programe in python language.
 
+# 3.Password generator
+Here is my password generator programe also here i used 2 module import 
+
+a.import random
+b.import string
